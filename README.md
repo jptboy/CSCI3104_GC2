@@ -4,6 +4,7 @@ The output file is in `./code/outfiles/output.txt`
 
 - template to run:
     - `cd code`
+    - `chmod 777 main.py`
     - `./main.py graphN.net k`
     - `./main.py graphN.net k write` if you want a list of occurences of subgraphs
 
