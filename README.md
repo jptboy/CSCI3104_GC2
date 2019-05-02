@@ -1,6 +1,6 @@
 # GC2 Network Motifs, in Python
 
-The output file is in `./code/outfiles/output.txt`.
+The output file(s) are in `./code/outfiles/graphNoutput.txt`.
 
 Make sure you have a version of python3 and are in a Linux or Mac environment.
 
