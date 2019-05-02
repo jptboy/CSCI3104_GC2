@@ -4,6 +4,7 @@ import sys
 import os
 import json
 from os.path import isfile
+netfile222 = None
 def getSubGraphs(subgraph_files):
     subgraphs = []
     for file in subgraph_files:
@@ -54,8 +55,10 @@ def readData(netfile):
     network = getNetwork(netfile)
     
     return network,subgraphs
-def writeData(data, k,writeOccs = False):
-    outfile = "./outfiles/output.txt"
+def writeData(data, k,networkfile, writeOccs = False):
+    networkfile = networkfile.split(".")
+    networkfile = networkfile[0]
+    outfile = "./outfiles/" + networkfile + "output.txt"
     with open(outfile,"w") as f:
         for i in range(k):
             knode = data[i]
@@ -77,6 +80,7 @@ def main():
         exit(1)
     args = sys.argv
     network_file = sys.argv[1]
+    netfile222 = network_file
     writeoccs = False
     if len(sys.argv) == 4 and sys.argv[3] == "write": 
         writeoccs = True
@@ -109,7 +113,7 @@ def main():
                     mapvals.append(temp)
                 outlist[Hnodes][idxH][3] = mapvals
 
-    writeData(outlist,k,writeOccs=writeoccs)
+    writeData(outlist,k,network_file,writeOccs=writeoccs)
 
 
 if __name__ == '__main__':
