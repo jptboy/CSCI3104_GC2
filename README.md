@@ -1,5 +1,7 @@
 # GC2 Network Motifs in python
 
+The output file is in code/outfiles/output.txt
+
 - template to run:
     - `cd code`
     - `./main.py graphN.net k`
