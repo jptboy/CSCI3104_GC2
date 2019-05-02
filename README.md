@@ -5,6 +5,7 @@ The output file is in `./code/outfiles/output.txt`.
 Make sure you have a version of python3 and are in a Linux or Mac environment.
 
 - Instructions to Run:
+    - `git clone https://github.com/jptboy/CSCI3104_GC2.git && cd CSCI3104_GC2`
     - `cd code`
     - `chmod 777 main.py`
     - Before running the next commands, select a `k` between 3 and 8, and a valid `graphN.net` file from one of these files:
