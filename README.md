@@ -2,6 +2,8 @@
 
 The output file is in `./code/outfiles/output.txt`
 
+Make sure you have a version of python3 and you are on a linux or mac environment.
+
 - template to run:
     - `cd code`
     - `chmod 777 main.py`
