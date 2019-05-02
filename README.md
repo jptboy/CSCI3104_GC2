@@ -7,6 +7,11 @@ Make sure you have a version of python3 and are in a Linux or Mac environment.
 ## Instructions to Run:
 - `git clone https://github.com/jptboy/CSCI3104_GC2.git && cd CSCI3104_GC2`
 - `cd code`
+- To run the program for **ALL `graphN.net` FILES** in order to generate all output files
+    - make sure k is between 3 and 8
+    - `python3 runAllNetworks.py k`
+        - example: `python3 runAllNetworks.py 8`
+    - Do `python3 runAllNetworks.py k write` if you want to write all subgraph occurences to the output files
 - `chmod 777 main.py`
 - Before running the next commands, select a `k` between 3 and 8, and a valid `graphN.net` file from one of these files:
     - `graph1.net`
