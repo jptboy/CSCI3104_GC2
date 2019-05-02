@@ -7,6 +7,11 @@ The output file is in `./code/outfiles/output.txt`
     - `chmod 777 main.py`
     - `./main.py graphN.net k`
     - `./main.py graphN.net k write` if you want a list of occurences of subgraphs
+    - Enter a k between 3 and 8, and a valid graphN.net file from these files
+        - `graph1.net`
+        - `graph2.net`
+        - `graph3.net`
+        - `graph4.net`
 
 - examples:
     - `./main.py graph3.net 5`
