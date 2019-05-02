@@ -3,7 +3,6 @@ import GK
 import sys
 import os
 import json
-from functools import reduce
 from os.path import isfile
 def getSubGraphs(subgraph_files):
     subgraphs = []
