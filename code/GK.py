@@ -337,6 +337,34 @@ def subGraphOccurences(G,H):
             if checkDegrees(agraph,G,H):
                 good.append(agraph)
         return len(good),good
+def convertElToDictGraph(el):
+    '''
+    Takes in a edge list in the format [[0,1],[1,2]]
+    and outputs a dictionary/adjacency list
+    style dictionary like
+    {
+        0 : set([1])
+        1 : set([0,2])
+        2 : set([1])
+    }
+    '''
+    dgraph = {}
+    for tup in el:
+        b,e = tup
+        if not (b in dgraph):
+            dgraph[b] = set([e])
+            if not (e in dgraph):
+                dgraph[e] = set([b])
+            else:
+                dgraph[e].add(b)
+        else:
+            dgraph[b].add(e)
+            if not(e in dgraph):
+                dgraph[e] = set([b])
+            else:
+                dgraph[e].add(b)
+    return dgraph
+
 tests = [
     (
         [[0,1], [1,2], [0,2]],[[0,1], [1,2], [0,2]], 1
@@ -378,33 +406,7 @@ tests = [
         [[0,5], [5,4], [4,3], [4,2], [3,5], [3,2], [2,1]], [[1,0], [2,3], [3,4], [3,5], [4,2], [4,5], [5,2]], 0
     ),
 ]
-def convertElToDictGraph(el):
-    '''
-    Takes in a edge list in the format [[0,1],[1,2]]
-    and outputs a dictionary/adjacency list
-    style dictionary like
-    {
-        0 : set([1])
-        1 : set([0,2])
-        2 : set([1])
-    }
-    '''
-    dgraph = {}
-    for tup in el:
-        b,e = tup
-        if not (b in dgraph):
-            dgraph[b] = set([e])
-            if not (e in dgraph):
-                dgraph[e] = set([b])
-            else:
-                dgraph[e].add(b)
-        else:
-            dgraph[b].add(e)
-            if not(e in dgraph):
-                dgraph[e] = set([b])
-            else:
-                dgraph[e].add(b)
-    return dgraph
+
 
 def tester():
     for idx,test in enumerate(tests):
@@ -413,3 +415,5 @@ def tester():
         copies = test[2]
         lens, gmap = subGraphOccurences(G,H)
         assert(lens == copies)
+if __name__ == "__main__":
+    tester()
