@@ -1,6 +1,6 @@
 # GC2 Network Motifs in python
 
-The output file is in code/outfiles/output.txt
+The output file is in `./code/outfiles/output.txt`
 
 - template to run:
     - `cd code`
