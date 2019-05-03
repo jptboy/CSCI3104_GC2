@@ -1,6 +1,5 @@
 # GC2 Network Motifs, in Python
 
-The output file(s) are in `./code/outfiles/graphNoutput.txt`.
 
 Make sure you have a version of python3 and are in a Linux or Mac environment.
 
@@ -20,6 +19,7 @@ Make sure you have a version of python3 and are in a Linux or Mac environment.
     - `graph4.net`
 - `./main.py graphN.net k`
 - `./main.py graphN.net k write` if you want a list of occurences of subgraphs in the network.
+- The output file(s) are in `./code/outfiles/graphNoutput.txt`.
 
 ## Examples:
 - `./main.py graph3.net 5`
