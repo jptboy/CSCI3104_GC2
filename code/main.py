@@ -8,6 +8,8 @@ from os.path import isfile
 This is the driver file, the algorithm(s) are in GK.py
 all this file does is read from the text files and put data into memory,
 call the Grochow-Kellis function and write data to text files.
+
+Look at the GK.py file mainly.
 '''
 def getSubGraphs(subgraph_files):
     '''
