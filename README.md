@@ -1,9 +1,16 @@
 # GC2 Network Motifs, in Python
 
+# Subgraph Counts
+- Our results for the count of subgraphs up to 5 nodes are in the `./code/outfiles/` directory as `saved_graphNoutput.txt` where N is the network number
+    - saved_graph4output.txt for example is the count of all subgraphs up to 5 nodes in graph4.net
+- 5 node subgraph counts for each network in a reasonable amount of time was the requirement for this assignment which was fulfilled
+- You can try running it for 6-8 node subgraphs but it will take a few hours most likely
+    - `python3 runAllNetworks.py 8` for generating output files for subgraph counts up to 8 nodes
 
-Make sure you have a version of python3 and are in a Linux or Mac environment.
+
 
 ## Instructions to Run:
+- **Make sure you have a version of python3 and are in a POSIX environment like Linux or Mac OSX**
 - `git clone https://github.com/jptboy/CSCI3104_GC2.git && cd CSCI3104_GC2`
 - `cd code`
 - To run the program for **ALL `graphN.net` FILES** in order to generate all output files
