@@ -7,7 +7,8 @@
 - You can try running it for 6-8 node subgraphs but it will take a few hours most likely
     - `python3 runAllNetworks.py 8` for generating output files for subgraph counts up to 8 nodes
 
-
+# Algorithm
+- We used the Grochow-Kellis algorithm to essentially try to map the subgraphs onto the larger network, our algorithm passed all the test cases on moodle. Go to the bottom of GK.py and you can see the tester function and the tests and if you run GK.py with `python3 GK.py` it shows that it passes all the tests. Look at the code and you will see the tests and the assert statement showing that it passes them.
 
 ## Instructions to Run:
 - **Make sure you have a version of python3 and are in a POSIX environment like Linux or Mac OSX**
