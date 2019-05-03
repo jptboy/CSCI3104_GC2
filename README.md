@@ -10,7 +10,7 @@
 ## Algorithm
 - We implemented the Grochow-Kellis algorithm to map the subgraphs onto the larger network. Our algorithm passed all the test cases on Moodle. At the bottom of GK.py, you should be able to see the tester function as well as the tests. If you run `GK.py` with `python3 GK.py` all tests will pass. An assert statement within our code should validate this as well.
 
-## Instructions to Run:
+## Instructions to Run
 - **Make sure you have a version of python3 and are in a POSIX environment like Linux or Mac OSX.**
 - `git clone https://github.com/jptboy/CSCI3104_GC2.git && cd CSCI3104_GC2`
 - `cd code`
@@ -29,13 +29,13 @@
 - `./main.py graphN.net k write` if you want a list of occurences of subgraphs in the network.
 - The output file(s) are in `./code/outfiles/graphNoutput.txt`.
 
-## Examples:
+## Examples
 - `./main.py graph3.net 5`
     - counts how many isomorphisms of graphs up to 5  nodes occur in `graph3.net`.
 - `./main.py graph3.net 8 write`
     - counts how many isomorphisms of graphs up to 8  nodes occur in `graph3.net` and writes the nodes that make up these isomorphisms into the text file.
     
-## Further Reference:
+## Further Reference
 - For more information on the Grochow-Kellis algorithm, check out:
 - [Network Motif Discovery Using Subgraph Enumeration and Symmetry-Breaking](http://www.cs.colorado.edu/~jgrochow/Grochow_Kellis_RECOMB_07_Network_Motifs.pdf)
     - The original GK algorithm.
