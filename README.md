@@ -1,4 +1,4 @@
-# GC2 Network Motifs, in Python
+# GC2: Network Motifs, in Python
 
 # Subgraph Counts
 - Our results for the count of subgraphs up to 5 nodes are in the `./code/outfiles/` directory as `saved_graphNoutput.txt` where N is the network number
